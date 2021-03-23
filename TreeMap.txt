@@ -1,0 +1,29 @@
+package com.test.oops;
+
+import java.util.Map;
+
+public class TreeMap {
+
+	public static void main(String[] args) {
+		java.util.TreeMap<Integer,Integer> tm = new java.util.TreeMap<Integer,Integer>();
+		tm.put(96, 15151096);
+		tm.put(102, 15151102);
+		tm.put(97, 15151022);
+		tm.put(95, 15151090);
+		tm.put(90, 15151200);
+		
+		
+		for(Map.Entry<Integer, Integer> m : tm.entrySet())
+		{
+				System.out.println("Rollno: "+m.getKey()+"  "+"Idno: "+m.getValue());
+		}
+		
+		tm.remove(97);
+		System.out.println(tm);
+		
+		System.out.println(tm.descendingMap());
+		System.out.println(tm.descendingKeySet());
+		
+	}
+
+}

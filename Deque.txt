@@ -1,0 +1,39 @@
+package com.test.oops;
+
+import java.util.ArrayDeque;
+
+public class DequeEg {
+
+	public static void main(String[] args) {
+		ArrayDeque<String> que = new ArrayDeque<String>();
+		que.add("Raman");
+		que.add("Siva");
+		que.add("Shyaam");
+		que.add("Shyaam");
+		que.add("");
+		
+		
+		for(String str : que)
+		{
+			System.out.println(str);
+		}
+	
+		//que.remove("Raman");
+		que.poll();
+		System.out.println(que);
+		
+		que.pollLast();
+		System.out.println(que);
+		
+		que.offerFirst("Soundarya");
+		System.out.println(que);
+		
+		que.offerLast("Varshini");
+		System.out.println(que);
+		
+		
+		
+
+	}
+
+}

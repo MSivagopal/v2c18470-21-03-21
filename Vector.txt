@@ -1,0 +1,66 @@
+package com.test.oops;
+
+import java.util.Vector;
+
+public class VectorMethods {
+
+	public static void main(String[] args) {
+		Vector<String> vec1 = new Vector<String>();
+		vec1.add("vijay");
+		vec1.add("Ragulkumar");
+		vec1.add("Sivaji");
+		vec1.add("Soundarya");
+		vec1.add("Shyaam");
+		vec1.add("Supreeth");
+		
+		System.out.println("First Employee Details: " +vec1);
+		
+		vec1.addElement("Suriya");
+		vec1.addElement("Kumaresh");
+		System.out.println("Employee Details: " +vec1);
+		
+		System.out.println(vec1.contains("Suriya"));
+		
+		vec1.insertElementAt("Master", 2);
+		System.out.println("Employee Details: " +vec1);
+		
+		vec1.remove("Sivaji");
+		System.out.println("Removed Sivaji from Employee Details: " +vec1);
+		
+		vec1.removeElementAt(0);
+		System.out.println("Removed element in index 0: " +vec1);
+		
+		System.out.println(vec1.get(0));
+		
+		System.out.println("First vector Size: "+vec1.size());
+		
+		System.out.println("First vector capcity: " +vec1.capacity());
+		
+		System.out.println("First element in the vector: " +vec1.firstElement());
+		
+		System.out.println("Last element in the vector: " +vec1.lastElement());
+		
+		System.out.println("cloned: "+vec1.clone());
+	
+		Vector<String> vec2 = new Vector<String>();
+		vec2.add("vijay");
+		vec2.add("Sivaji");
+		vec2.add("Soundarya");
+		vec2.add("Shyaam");
+		vec2.add(" ");
+		System.out.println("Second Employee Details: "+vec2);
+		
+		System.out.println("Second Employee Details is Empty or Not: "+vec2.isEmpty());
+		
+		vec1.addAll(vec2);
+		System.out.println(vec1);
+		
+		System.out.println("Full vector Size: "+vec1.size());
+		
+		System.out.println("Full vector capcity: " +vec1.capacity());
+		
+		Vector<String> vec3 = new Vector<String>();
+		System.out.println("Third Employee Details is Empty or Not: "+vec3.isEmpty());
+	}
+
+}

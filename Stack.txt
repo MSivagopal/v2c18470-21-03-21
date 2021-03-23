@@ -1,0 +1,46 @@
+package com.test.oops;
+
+import java.util.Iterator;
+import java.util.Stack;
+
+public class StackMethods {
+
+	public static void main(String[] args) {
+		Stack<String> st = new Stack<String>();
+		st.push("vijay");
+		st.push("Ragulkumar");
+		st.push("Sivaji");
+		st.push("Soundarya");
+		st.push("Shyaam");
+		st.push("Supreeth");
+		
+		System.out.println("First Employee Details: " +st);
+		
+		System.out.println("First element:" +st.peek());
+		
+		System.out.println(" ");
+		Iterator<String> it = st.iterator();
+		while(it.hasNext()) {
+			 System.out.println(it.next());
+		}
+		
+		System.out.println("After Removing");
+		st.remove(2);
+		st.pop();
+		for(String t : st) 
+		{
+		System.out.println(t);
+		}
+		
+		System.out.println(st.capacity());
+		System.out.println("Element Contains: "+st.contains("Soundarya"));
+		System.out.println("Element Contains: "+st.contains("Sivaji"));
+		System.out.println("find Soundarya: "+st.search("Soundarya"));
+		
+		
+		Stack<String> st1 = new Stack<String>();
+		
+		System.out.println("Second Stack is Empty or Not: "+st1.empty());
+	}
+
+}
